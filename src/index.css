@@ -19,3 +19,17 @@
   margin: 0 auto;
   width: 80%;
 }
+
+.margin-60 {
+  margin: 0 auto;
+  width: 60%;
+}
+
+/* header */
+header {
+  background-color: var(--color-light-gray);
+}
+
+h1 {
+  padding: 1rem;
+}
