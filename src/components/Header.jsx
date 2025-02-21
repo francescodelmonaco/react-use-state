@@ -1,7 +1,7 @@
 const Header = () => {
     return (
         <header>
-            <h1 className="margin-80">Learn Web Development</h1>
+            <h1 className="margin-90">Learn Web Development</h1>
         </header>
     )
 };

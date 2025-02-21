@@ -11,13 +11,14 @@
 :root {
   --color-white: #fff;
   --color-light-gray: #f8f9fa;
+  --color-gray: #d2d2d2;
   --color-yellow: #ffc107;
   --color-blue: #0d6efd;
 }
 
-.margin-80 {
+.margin-90 {
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
 }
 
 .margin-60 {
@@ -36,7 +37,7 @@ h1 {
 
 /* main */
 main div {
-  padding: 1rem 0;
+  padding: 1.5rem 0;
 }
 
 .button-list {
@@ -59,4 +60,16 @@ button {
 button.active {
   background-color: var(--color-yellow);
   color: black;
+}
+
+/* main */
+.card-container {
+  border: 1px solid var(--color-gray);
+  border-radius: 0.3rem;
+  padding: 1.5rem 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
 }

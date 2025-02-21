@@ -1,10 +1,10 @@
-import ButtonList from "./ButtonList";
+import ButtonsList from "./ButtonsList";
 import Card from "./Card";
 
 const Main = () => {
     return (
         <main>
-            <ButtonList />
+            <ButtonsList />
             <Card />
         </main>
     )
