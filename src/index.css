@@ -33,3 +33,30 @@ header {
 h1 {
   padding: 1rem;
 }
+
+/* main */
+main div {
+  padding: 1rem 0;
+}
+
+.button-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+button {
+  border: none;
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+
+  cursor: pointer;
+}
+
+button.active {
+  background-color: var(--color-yellow);
+  color: black;
+}
