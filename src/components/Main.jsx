@@ -9,7 +9,14 @@ const Main = () => {
     return (
         <main>
             <ButtonsList />
-            <Card content={array} />
+
+            {
+                array.map((element) => {
+                    return (
+                        <Card key={element.id} title={element.title} content={element.description} />
+                    )
+                })
+            }
         </main>
     )
 };
