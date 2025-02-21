@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  border: 1px solid red;
+
+  font-family: sans-serif;
+}
+
+:root {
+  --color-white: #fff;
+  --color-light-gray: #f8f9fa;
+  --color-yellow: #ffc107;
+  --color-blue: #0d6efd;
+}
+
+.margin-80 {
+  margin: 0 auto;
+  width: 80%;
+}
