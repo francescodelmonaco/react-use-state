@@ -31,18 +31,26 @@ const Main = () => {
             </div>
 
             {
-                array.map((element) => {
-                    const { id, title, description } = element;
-
-                    return selectedLanguage === id ? (
-                        <div className="margin-60 card-container" key={id}>
-                            <Card
-                                title={title}
-                                content={description}
-                            />
+                selectedLanguage === null ? (
+                    <>
+                        <div className="margin-60 card-container">
+                            <h2>Nessun linguaggio selezionato</h2>
                         </div>
-                    ) : null;
-                })
+                    </>
+                ) : (
+                    array.map((element) => {
+                        const { id, title, description } = element;
+
+                        return selectedLanguage === id ? (
+                            <div className="margin-60 card-container" key={id}>
+                                <Card
+                                    title={title}
+                                    content={description}
+                                />
+                            </div>
+                        ) : null;
+                    })
+                )
             }
         </main>
     )
