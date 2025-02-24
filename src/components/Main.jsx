@@ -34,19 +34,14 @@ const Main = () => {
                 array.map((element) => {
                     const { id, title, description } = element;
 
-                    if (id === selectedLanguage) {
-                        return (
-                            <div className="margin-60 card-container">
-                                <Card
-                                    key={id}
-                                    title={title}
-                                    content={description}
-                                />
-                            </div>
-                        )
-                    } else {
-                        return null
-                    }
+                    return selectedLanguage === id ? (
+                        <div className="margin-60 card-container" key={id}>
+                            <Card
+                                title={title}
+                                content={description}
+                            />
+                        </div>
+                    ) : null;
                 })
             }
         </main>
